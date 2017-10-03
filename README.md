@@ -1,2 +1,2 @@
 # sorting-algorithms
-different sorting algoritms
+different generic sorting algoritms
