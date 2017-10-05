@@ -57,8 +57,8 @@ public class QuickSort {
 		System.out.println("input: ");
 		print(stringList);
 		
-        quickSort(stringList);
-        System.out.println("output: ");
+        	quickSort(stringList);
+        	System.out.println("output: ");
 		print(stringList);
 		
 
