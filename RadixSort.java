@@ -45,21 +45,21 @@ public class RadixSort {
 	}
 
 	public static void main(String[] args) {
-		   Integer[] list = {323, 122, 231, 145, 546, 144};
-       radixSort(list);
+		Integer[] list = {323, 122, 231, 145, 546, 144};
+      		radixSort(list);
 
-       String[] list1 = {"ja", "ear", "gah", "ac", "am", "aa", "aaav"};
-       radixSort(list1);
+       		String[] list1 = {"ja", "ear", "gah", "ac", "am", "aa", "aaav"};
+       		radixSort(list1);
 
-       for(int i = 0 ; i < list.length ; i++){
-           System.out.print(list[i] + " ");
-       }
+      		 for(int i = 0 ; i < list.length ; i++){
+           		System.out.print(list[i] + " ");
+       		 }
 
-       System.out.println();
+       		System.out.println();
 
-       for(int i = 0 ; i < list1.length ; i++){
-           System.out.print(list1[i] + " ");
-        }	
-   }
+       		for(int i = 0 ; i < list1.length ; i++){
+          		 System.out.print(list1[i] + " ");
+        	}	
+   	}	
 
 }
