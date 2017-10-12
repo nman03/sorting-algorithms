@@ -61,22 +61,22 @@ public class HeapSort {
 	}
     
     public static void main(String[] args) {
+    	System.out.println("HeapSort: ");
+    	
         Integer[] intList = {4, 1, 3, 2, 6, 9, 10, 5, 8, 7};
-        
-        System.out.println("input: ");
+        System.out.print("\ninput: ");
 		print(intList);
 		
         heapSort(intList);
-        System.out.println("output: ");
+        System.out.print("output: ");
 		print(intList);
              
         String[] stringList = {"c", "a", "r", "l", "s"};
-        
-        System.out.println("input: ");
+        System.out.print("\ninput: ");
 		print(stringList);
 		
         heapSort(stringList);
-        System.out.println("output: ");
+        System.out.print("output: ");
 		print(stringList);
         
     }

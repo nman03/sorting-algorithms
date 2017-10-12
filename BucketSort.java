@@ -1,4 +1,4 @@
-oackage sortingAlgorithms;
+package sortingAlgorithms;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +19,7 @@ public class BucketSort {
 				bot = list[i];
 			}
 		}
-		
+
 		int range = (list.length + 1) * BUCKET_COUNT; 
 
 		@SuppressWarnings("unchecked")
@@ -28,8 +28,8 @@ public class BucketSort {
 		for (int i = 0; i < BUCKET_COUNT; i++) { 
 			buckets[i] = new ArrayList<E>();
 		}
-		
-		
+
+
 		for (int i = 0 ; i < list.length ; i++) {
 			buckets[((String.valueOf(list[i]).compareTo(String.valueOf(bot))) / range)].add(list[i]);
 		}
@@ -44,26 +44,31 @@ public class BucketSort {
 		}
 	}
 
-	public static void main(String[] args) {
-		Integer[] list = {3, 2, 1, 5, 6, 9};
-		bucketSort(list);
-
-		String[] list1 = {"c", "b", "a", "e", "f", "d"};
-		bucketSort(list1);
-		
-		for(int i = 0 ; i < list.length ; i++){
-			System.out.print(list[i] + " ");
+	public static <E> void print(E[] list) {
+		for (E elem : list) {
+			System.out.print(elem + " ");
 		}
-
 		System.out.println();
+	}
 
-		for(int i = 0 ; i < list1.length ; i++){
-			System.out.print(list1[i] + " ");
-		}
+	public static void main(String[] args) {
+		System.out.println("BucketSort: ");
+
+		Integer[] intList = {3, 2, 1, 5, 6, 9};
+		System.out.print("\ninput: ");
+		print(intList);
+
+		bucketSort(intList);
+		System.out.print("output: ");
+		print(intList);	
+
+		String[] stringList = {"c", "b", "a", "e", "f", "d"};
+		System.out.print("\ninput: ");
+		print(stringList);
 		
-		char a = '1';
-		char b = '2';
-		System.out.print((int)(a + b));
+		bucketSort(stringList);
+		System.out.print("output: ");
+		print(stringList);
 	}
 
 }

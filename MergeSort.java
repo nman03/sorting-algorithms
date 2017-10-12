@@ -50,20 +50,22 @@ public class MergeSort {
 	}
 
 	public static void main(String[] args) {
-		Integer[] intList= {6, 7, 3, 2, 4};
-		System.out.println("input: ");
+		System.out.println("MergeSort: ");
+		
+		Integer[] intList = {6, 7, 3, 2, 4};
+		System.out.print("\ninput: ");
 		print(intList);
 
 		mergeSort(intList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(intList);
 
 		String[] stringList = {"z", "e", "q", "b"};
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(stringList);
 
 		mergeSort(stringList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(stringList);
 	}
 }

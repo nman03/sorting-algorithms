@@ -47,21 +47,25 @@ public class RandomizedQuickSort {
 		System.out.println();
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
+		System.out.println("Randomized QuickSort: ");
+		
 		Integer[] intList = {1,4,9,6,5,7,2,0};
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(intList);
 					
 		randomizedQuickSort(intList, 0, intList.length - 1);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(intList);
 		
 		String[] stringList = {"t", "d", "h", "a"};
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(stringList);
 
 		randomizedQuickSort(stringList, 0, stringList.length - 1);;
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(stringList);
 	}
+
 }
+
