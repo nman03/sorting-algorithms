@@ -24,20 +24,22 @@ public class BubbleSort {
 	}
 
 	public static void main(String[] args) {
-		Integer[] intList= {5, 1, 7, 4, 9};
-		System.out.println("input: ");
+		System.out.println("BubbleSort: ");
+		
+		Integer[] intList = {5, 1, 7, 4, 9};
+		System.out.print("\ninput: ");
 		print(intList);
 
 		bubbleSort(intList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(intList);
 
 		String[] stringList = {"t", "r", "c", "a"};
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(stringList);
 
 		bubbleSort(stringList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(stringList);
 	}
 }

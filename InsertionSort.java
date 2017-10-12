@@ -24,20 +24,22 @@ public class InsertionSort {
 	}
 	
 	public static void main(String[] args) {
-		Integer[] intList= {2, 5, 4, 3, 1};
-		System.out.println("input: ");
+		System.out.println("InsertionSort: ");
+		
+		Integer[] intList = {2, 5, 4, 3, 1};
+		System.out.print("\ninput: ");
 		print(intList);
 		
 		insertionSort(intList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(intList);
 		
 		String[] stringList = {"b", "j", "k", "e"};
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(stringList);
 		
 		insertionSort(stringList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(stringList);
 	}
 }

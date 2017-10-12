@@ -1,14 +1,12 @@
 package sortingAlgorithms;
 
-
-public class HeapSort {
+public class HeapSort {	
 	
     private static int size;
     private static int leftSide;
     private static int rightSide;
     private static int max;
 
-    
     public static <E extends Comparable<E>> void heap(E[] list) {
         size = list.length - 1;
         
@@ -61,23 +59,23 @@ public class HeapSort {
 	}
     
     public static void main(String[] args) {
+    	System.out.println("HeapSort: ");
+    	
         Integer[] intList = {4, 1, 3, 2, 6, 9, 10, 5, 8, 7};
-        
-        System.out.println("input: ");
-		print(intList);
+        System.out.print("\ninput: ");
+	print(intList);
 		
         heapSort(intList);
-        System.out.println("output: ");
-		print(intList);
+        System.out.print("output: ");
+	print(intList);
              
         String[] stringList = {"c", "a", "r", "l", "s"};
-        
-        System.out.println("input: ");
-		print(stringList);
+        System.out.print("\ninput: ");
+	print(stringList);
 		
         heapSort(stringList);
-        System.out.println("output: ");
-		print(stringList);
+        System.out.print("output: ");
+	print(stringList);
         
     }
 }

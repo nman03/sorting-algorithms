@@ -43,24 +43,22 @@ public class QuickSort {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("QuickSort: ");
+		
 		Integer[] intList = {3, 2, 1, 5, 6, 4};
-
-		System.out.println("input: ");
+		System.out.print("\ninput: ");
 		print(intList);
 
 		quickSort(intList);
-		System.out.println("output: ");
+		System.out.print("output: ");
 		print(intList);
 		
-		String[] stringList = {"j", "r", "h", "a", "m"};
-		
-		System.out.println("input: ");
+		String[] stringList = {"j", "r", "h", "a", "m"};	
+		System.out.print("\ninput: ");
 		print(stringList);
 		
         	quickSort(stringList);
-        	System.out.println("output: ");
+       		System.out.print("output: ");
 		print(stringList);
-		
-
 	}
 }
